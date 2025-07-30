@@ -1,1 +1,14 @@
-create text.txt.
+def find_substring_index(string1, string2):
+   
+    try:
+        index = string1.index(string2)
+        return index
+    except ValueError:
+        return -1
+
+string1_input = "test123string"
+string2_input = "123"
+
+output = find_substring_index(string1_input, string2_input)
+
+print(output)
